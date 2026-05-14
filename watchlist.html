@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Watchlist</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="top-header">
+  <h1>Watchlist</h1>
+</header>
+
+<main>
+  <div id="watchlistContainer" class="player-grid"></div>
+</main>
+
+<nav class="bottom-nav">
+  <a href="index.html">Home</a>
+  <a href="players.html">Market</a>
+  <a href="watchlist.html">Watchlist</a>
+</nav>
+
+<script>
+const watchlist = JSON.parse(localStorage.getItem('watchlist')) || [];
+const container = document.getElementById('watchlistContainer');
+
+watchlist.forEach(player => {
+  const card = document.createElement('div');
+  card.className = 'player-card';
+
+  card.innerHTML = `
+    <h3>${player.name}</h3>
+    <p>${player.rating} ${player.position}</p>
+    <p>PS/XBOX: ${player.psPrice.toLocaleString()}</p>
+  `;
+
+  container.appendChild(card);
+});
+</script>
+
+</body>
+</html>

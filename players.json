@@ -1,0 +1,28 @@
+[
+  {
+    "name": "Kylian Mbappe",
+    "rating": 91,
+    "position": "ST",
+    "club": "Real Madrid",
+    "league": "La Liga",
+    "nation": "France",
+    "cardType": "Gold",
+    "psPrice": 1200000,
+    "pcPrice": 1350000,
+    "switchPrice": 1100000,
+    "change24h": 4.2
+  },
+  {
+    "name": "Jude Bellingham",
+    "rating": 90,
+    "position": "CM",
+    "club": "Real Madrid",
+    "league": "La Liga",
+    "nation": "England",
+    "cardType": "TOTW",
+    "psPrice": 890000,
+    "pcPrice": 940000,
+    "switchPrice": 850000,
+    "change24h": -3.1
+  }
+]
